@@ -1,5 +1,6 @@
 /*importing google font-->*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:wght@300&display=swap" );
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:ital,wght@1,300&family=Roboto+Mono&family=Roboto:wght@300&display=swap');
 
 
 *{
@@ -7,4 +8,71 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+.btn{
+    color: #fff;
+}
+
+.nav_link{
+    color: #fff;
+    justify-content: space-between;
+}
+.nav{
+    max-width: 1100px;
+    width:100%;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 6px 24px;
+    border:  2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+
+
+}
+
+.btn:active{
+ transform: scale(0.8);
+}
+
+.nav-item{
+    column-gap: 25px;
+    display:contents
+}
+
+
+.nav,
+.nav-items{
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items{
+    column-gap: 25px;
+
+}
+.nav_link:hover {
+    color:lightblue;
+}
+.home{
+    height:100vh;
+    width:100%;
+    background: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
 }
