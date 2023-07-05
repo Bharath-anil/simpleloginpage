@@ -80,3 +80,119 @@ a{
     background-position: center;
     background-size: cover;
 }
+
+/* form  container*/
+
+.form-container{
+    position: absolute;
+    max-width: 330px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    z-index:101;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: black;
+}
+.form-close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0b0217;
+    font-size: 22px;
+    opacity:0.7;
+    cursor: pointer;
+}
+.form-close::shadow{
+    color: black;
+}
+
+.form-container h2{
+ font-size: 25px;
+ text-align: center;
+}
+
+.input-box{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    
+}
+.input-box input{
+    height: 100%;
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid black;
+    padding:0 35px;
+    transition: all 0.2s ease-in;
+    outline: none;
+}
+.input-box input:focus{
+    border-color:lightblue;
+}
+.input-box i{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.input-box input:focus ~i.email,
+.input-box input:focus ~i.password{
+color:lightblue;
+}
+.input-box i.email,
+.input-box i.password{
+    left: 0;
+    color: #0b0217;
+}
+
+.op{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 15px;
+}
+
+.checkbox {
+    display:flex;
+    white-space: nowrap;
+    user-select: none;
+
+}
+.checkbox input{
+    accent-color: #7d2ae8;
+}
+
+.checkbox label{
+    font-size: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: #0b0217;
+    justify-content: space-between;
+}
+.forget_pass{
+    margin-right: 0;
+}
+
+.login-btn{
+    margin:2px 0 auto 0;
+}
+.form-container .login_btn{
+    background: rgb(104, 149, 212);
+    margin-top: 30px;
+    width:100%;
+    padding: 12px 0;
+    border-radius: 10px;
+
+}
+.signup{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+    
+}
