@@ -22,7 +22,7 @@
        <a href="#" class="nav_link">Contacts</a>
            </li>
         </ul>
-       <button class="btn">Login</button>
+       <button class="btn" id="form-open">Login</button>
        </nav>
   </header>
 
@@ -30,7 +30,7 @@
     <!--Form -->
     <div class="form-container">
       <i class="uil uil-times-circle  form-close"></i>
-  <div class="form-loginform">
+  <div class="form loginform">
     <form action="#">
       <h2>Login</h2>
       <div class="input-box">
@@ -49,13 +49,36 @@
       </span>
       <a href="#" class="forget_pass">Forget Password</a>
     </div>
-    <button class="login_btn">Login</button>
-    <div class="signup" >Already have an account? <a href="#">Signup</a></div>
+    <button class="btn" >Login</button>
+    <div class="signup" >Don't have an account? <a href="#" id="signup">Signup</a></div>
     </form>
   </div>
+
+  <!--Sign up-->
+  <div class="form signupform">
+    <form action="#">
+      <h2>SignUp</h2>
+      <div class="input-box">
+        <input type="email" placeholder="Email address" required />
+        <i class="uil uil-envelope  email"></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Create Your Password" required minlength="8"/>
+        <i class="uil uil-keyboard-alt password"></i>
+        <div class="input-box">
+    
+          <input type="password" placeholder="Confirm Your Password" required minlength="8"/>
+          <i class="uil uil-keyboard-alt password"></i>
+    
+    </div>
+    <button class="btn">SignUp</button>
+    <div class="signup" >Already have an account? <a href="#"id="login">Login</a></div>
+    </form>
+  </div>
+ 
 </div>
 
   </section>
-       <script src='main.js'></script>
+       <script src='login.js'></script>
 </body>
 </html>
