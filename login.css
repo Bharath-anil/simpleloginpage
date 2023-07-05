@@ -106,6 +106,15 @@ a{
     transform: translate(-50%,-50%) scale(1);
 
 }
+.signupform{
+    display: none;
+}
+.form-container.active .signupform{
+    display:block;
+}
+.form-container.active .loginform{
+    display:none;
+}
 .form-close{
     position: absolute;
     top: 10px;
@@ -200,7 +209,7 @@ margin-top: 15px;
 .signup{
     font-size: 12px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
     
 }
 .signupform{
