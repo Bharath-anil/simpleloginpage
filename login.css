@@ -111,6 +111,7 @@ a{
 }
 .form-container.active .signupform{
     display:block;
+    background-color: rgb(0,0,00.4s);
 }
 .form-container.active .loginform{
     display:none;
@@ -214,4 +215,8 @@ margin-top: 15px;
 }
 .signupform{
     display: none;
+}
+.btn:hover{
+    background-color:#C5DFF8;
+    color: #0b0217;
 }
